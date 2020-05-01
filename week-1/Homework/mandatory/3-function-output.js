@@ -1,17 +1,43 @@
 // Add comments to explain what this function does. You're meant to use Google!
+// it rounded to the nearest whole number.
 function getNumber() {
     return Math.random() * 10;
 }
 
 // Add comments to explain what this function does. You're meant to use Google!
+// concat () concatenates the string arguments to the calling string and returns a new string.
 function s(w1, w2) {
     return w1.concat(w2);
 }
 
 function concatenate(firstWord, secondWord, thirdWord) {
+
+//   const name = firstWord + " " + secondWord  + " " + thirdWord ;
+//   return name ;
+
+return firstWord.concat(" ", secondWord).concat(" ", thirdWord) ;
+
     // Write the body of this function to concatenate three words together
     // Look at the test case below to understand what to expect in return 
 }
+
+
+// function hello(name,age, color, isScottish){
+// return "Hello" + name + age + color + isScottish;
+// }
+
+// console.log(hello("Awet",30,"Red", true));
+
+
+
+
+
+
+
+
+
+
+
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
