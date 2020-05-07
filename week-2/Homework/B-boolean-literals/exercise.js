@@ -6,7 +6,16 @@
 */
 
 var codeYourFutureIsGreat = true;
+function codeYourFuture (CYF){
+if (CYF === "boolean"){
+  return true
+}
+return false
+}
 
+var mozafarIsCool = false;
+var calculationCorrect = true;
+var moreThan10Students = false;
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
