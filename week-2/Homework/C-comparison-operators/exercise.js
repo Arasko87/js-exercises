@@ -7,7 +7,7 @@
 
 var studentCount = 16;
 var mentorCount = 9;
-var moreStudentsThanMentors = (studentCount > mentorCount );
+var moreStudentsThanMentors = (studentCount > mentorCount);
 
 
 var roomMaxCapacity = 25;
