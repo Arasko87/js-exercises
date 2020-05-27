@@ -4,8 +4,14 @@
 // - return a new array with the first item matching `valueToRemove` removed
 // TIP: Use the .indexOf() method
 
+
+
+
 function remove(arr, valueToRemove) {
-  return; // complete this statement
+  let index = arr.indexOf(valueToRemove);
+  return arr = arr.slice(0, index).concat(arr.slice(index + 1));
+   
+  // complete this statement
 }
 
 /*
