@@ -20,9 +20,10 @@ function DanielStatus (name , danielsRole) {
   }
 }
 
-const message = DanielStatus ("Daniel", "mentor");
-console.log(message);
-
+// const message = DanielStatus ("Daniel", "mentor");
+// console.log(message);
+// or
+console.log(DanielStatus ("Daniel", "mentor"));
 /* 
 EXPECTED RESULT
 ---------------
