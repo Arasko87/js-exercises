@@ -8,9 +8,11 @@
 
 
 function remove(arr, valueToRemove) {
+  
   let index = arr.indexOf(valueToRemove);
+
   return arr = arr.slice(0, index).concat(arr.slice(index + 1));
-   
+
   // complete this statement
 }
 
