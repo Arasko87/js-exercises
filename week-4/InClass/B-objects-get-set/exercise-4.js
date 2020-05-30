@@ -8,8 +8,8 @@ let dog = {
 };
 
 // WRITE CODE BELOW THIS LINE
-
-
+ dog.name = "Rex";
+ dog.wantsToPlay = true;
 
 // WRITE CODE ABOVE THIS LINE
 
@@ -20,4 +20,4 @@ console.log(dog.wantsToPlay);
 
 // it should output:
 // Rex
-// true
+// true;

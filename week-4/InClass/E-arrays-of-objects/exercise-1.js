@@ -23,13 +23,15 @@ var person3 = {
 DO NOT EDIT ANYTHING ABOVE THIS LINE
 WRITE YOUR CODE BELOW
 */
+var persons = [person1, person2, person3]; // Complete here
 
+var personNames = persons.map(function personsNames(person){
+    return person.name;
+})                                         // Complete here
 
-var persons = // Complete here
-
-var personNames = // Complete here
-
-var personsYoungerThan28YearsOld = // Complete here
+var personsYoungerThan28YearsOld = persons.filter( function personsYoungerThan28Years( person){
+    return person.age < 28 ;
+})                                         // Complete here
 
 
 /*

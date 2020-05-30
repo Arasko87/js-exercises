@@ -14,3 +14,10 @@ Make sure you use words like:
 - etc.
 
 */
+let house = {
+    location : "Glasgow",
+    numOfRooms : 2,
+    houseSize : "100 meters",
+    garden : true,
+    price : "£ 50,000"
+};

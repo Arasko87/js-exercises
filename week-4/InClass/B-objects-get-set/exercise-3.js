@@ -4,6 +4,17 @@
 
 // WRITE CODE BELOW THIS
 
+let kitten ={
+    name : "Gilbert",
+    ageInYear : 2,
+    gender :"male",
+    neutered : true,
+
+};
+
+
+
+
 // WRITE CODE ABOVE THIS
 
 console.log(kitten.name);
