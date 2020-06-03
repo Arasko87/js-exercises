@@ -33,18 +33,34 @@ let destination4 = {
 };
 
 let travelDestinations = [destination1, destination2, destination3, destination4];
-
 /* 
 DO NOT EDIT ANYTHING ABOVE THIS LINE
 WRITE YOUR CODE BELOW
 */
+// 1) Filter the travelDestinations array to return all destination names reachable within 500 kms.
+
+let destinationNamesWithin500Kms = travelDestinations.filter(function travelDis(dirLessTh500){
+  return  dirLessTh500.distanceKms <= 500 }).map(place => place.destinationName)
+
+// let destinationNamesWithin500Kms = travelDestinations.filter(destination => destination.distanceKms <500)
+// .map(destination => destination.destinationName);// Complete here   
 
 
-let destinationNamesWithin500Kms = // Complete here
+// 2) Find a destination name reachable by ferry.
 
-let destinationNameReachableByFerry = // Complete here
+let destinationNameReachableByFerry = travelDestinations.filter(destination => destination.transportations.includes("ferry"))
+.map(transport => transport.destinationName);  
 
-let destinationNamesMoreThan300KmsAwayByTrain = // Complete here (PRINT THE RESULT IN THE CONSOLE USING FOREACH)
+
+    // Complete here 
+
+// 3) Print in the console all the destination names more than 300 kms far away and reachable by train.
+
+let destinationNamesMoreThan300KmsAwayByTrain = travelDestinations.filter(lessTh300 => lessTh300.distanceKms > 300 
+    && lessTh300.transportations.includes("train")).map(transport => transport.destinationName);
+    
+
+// Complete here (PRINT THE RESULT IN THE CONSOLE USING FOREACH)
 
 
 /*

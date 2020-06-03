@@ -18,7 +18,7 @@ let parkAvenueHouse = {
     address: "50 Park Avenue",
     price: 195000,
     currentOwner: {
-      firstName: "Marie",
+      firstName: ["Marie",],
       lastName: "McDonald",
       email: "marie.m@real-emails.com"
     }
