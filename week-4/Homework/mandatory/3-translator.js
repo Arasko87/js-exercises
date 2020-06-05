@@ -16,6 +16,7 @@ const languages = {
   spanish: "Bienvenido",
   swedish: "Valkommen",
   welsh: "Croeso",
+  kurdish: "Silav"
 };
 
 /*
@@ -26,10 +27,35 @@ It should default to English if the language is not in your object of languages,
 or in the event of an invalid input.
 */
 
+/*
+// we return all the objects to lower Case then 
 function greet(language) {
-  //write your code here
-}
+  //console.log(" second ",  languages[language.toLowerCase()]);
+//  console.log(" first", languages[language]);
+  
+const key = language.toLowerCase();
 
+  if (Object.keys(languages).includes(key))
+  {
+    return languages[key];}
+    else{
+ //     console.log("Hiiiiiiii");
+
+    return "please make sure you entered the correct language, or check your spelling and Caps Lock";
+    }
+  }
+
+console.log(greet("arabic"));
+*/
+function greet(language) {
+  const key = language.toLowerCase();
+  if (languages[key]) {
+    return languages[key];
+  } else {
+    return "No language available";
+  }
+}
+console.log(greet("KUrdish"));
 /*
 Test your function works correctly calling it inside a console.log(), for each one of these cases:
 
