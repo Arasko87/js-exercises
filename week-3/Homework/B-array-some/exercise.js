@@ -12,8 +12,9 @@ var pairsByIndex = [[0, 3], [1, 2], [2, 1], null, [3, 0]];
 var parisWithNoNull = pairsByIndex.some(isIncludesNull);
 
 function isIncludesNull(x){
+  if (x === null){
   return process.exit(1);
-}
+}}
 
 
 

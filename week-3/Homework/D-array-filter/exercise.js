@@ -9,9 +9,9 @@
 var pairsByIndexRaw = [[0, 3], [1, 2], [2, 1], null, [1], false, "whoops"];
 
 var pairsByIndex = pairsByIndexRaw.filter(pairsByIndex1); 
+
 function pairsByIndex1(num){
-  
-  return num !== null && num !== false && typeof num !== "string"  && num.length === 2;
+    return num !== null && typeof(num)!== "boolean" && typeof(num) !== "string" && num.length === 2;
 }
 
 

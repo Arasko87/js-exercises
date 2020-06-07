@@ -14,11 +14,11 @@ console.log(numBy100);
 //=====================================
 
 
-function double(number) {
+function multipleBy100(number) {
 
     return number * 100;
   }
-var numbersDoubled = numbers.map(double);
+var numbersDoubled = numbers.map(multipleBy100);
 
   console.log(numbersDoubled);
 
@@ -26,6 +26,6 @@ var numbersDoubled = numbers.map(double);
 //=====================================
 
 
-var numbersDoubled = numbers.map(function double(number){return number * 100; });
+var numbersDoubled = numbers.map(function multipleBy100(number){return number * 100; });
 
   console.log(numbersDoubled);
