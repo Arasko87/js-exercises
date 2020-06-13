@@ -4,16 +4,17 @@
 function mood() {
   let isHappy = true;
 
-  if (isHappy) {
+  if (isHappy === "boolean") {
     return "I am happy";
   } else {
     return "I am not happy";
   }
 }
 
+
 function greaterThan10() {
   let num = 10;
-  let isBigEnough;
+  let isBigEnough= 5;
 
   if (isBigEnough) {
     return "num is greater than or equal to 10";

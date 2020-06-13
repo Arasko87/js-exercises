@@ -14,12 +14,21 @@ Write JavaScript below that logs:
     4. all the "p" elements of contained inside  the .primary-content element node
     --> should log a list of nodes with a length of 3
 */
+console.log(document.querySelectorAll("p"));
 
+<<<<<<< Updated upstream
 document.querySelectorAll("P");
 document.querySelector(".site-header");
 document.querySelector("#jumbotron-text");
 document.querySelectorAll(".primary-content  p");
 
+=======
+console.log(document.querySelector(".site-header"))
+
+console.log(document.querySelector("#jumbotron-text"))
+
+console.log(document.querySelectorAll((".primary-content p")))
+>>>>>>> Stashed changes
 
 /*
 Task 2
@@ -27,6 +36,7 @@ Task 2
 
 When a user clicks the 'ALERT' button, an alert box should pop up with the text "Thanks for visiting Bikes for Refugees!"
 */
+<<<<<<< Updated upstream
 let myButton = document.querySelector("#alertBtn");
 myButton.addEventListener("click",alertThanks );
 
@@ -35,13 +45,24 @@ function alertThanks(){
 }
 
 
+=======
+let alertButton = document.querySelector("#alertBtn");
+alertButton.addEventListener("click", vote)
+function vote(){
+    alert ("Thanks for visiting Bikes for Refugees!");
+}
+>>>>>>> Stashed changes
 /*
 Task 3
 =======
 
 Write JavaScript below that changes the background colour of the page when the 'Change colour' button is clicked.
 */
+let colorChange = document.querySelector("#bgrChangeBtn");
+colorChange.addEventListener("click",newColor)
+function newColor(){
 
+<<<<<<< Updated upstream
 let changeBckColor = document.querySelector("#bgrChangeBtn");
 changeBckColor.addEventListener("click",bkColor);
 
@@ -51,6 +72,10 @@ document.body.style.backgroundColor="pink";
 
 }
 
+=======
+    bgrChangeBtn.style.backgroundColor = "red";
+}
+>>>>>>> Stashed changes
 
 /*
 Task 4
@@ -80,6 +105,7 @@ Task 5
 When the 'Larger links!' button is clicked, the text of all links on the page should increase.
 */
 
+<<<<<<< Updated upstream
 let largeText = document.querySelector("#largerLinksBtn");
     largeText.addEventListener("click", increaseTheText);
 
@@ -113,24 +139,12 @@ function theNewList(){
         list.appendChild(unorderedList);
     
 }
+=======
+let bigLinksBtn = document.querySelector("largerLinksBtn");
 
-/*
-1. create ul
-2. Append ul as a child to parent div, maybe add id to it
+bigLinksBtn.addEventListener("click",largeFontSize);
 
-3.on click, create li element, add text to li element, append li element as a child to your ul
-
-
-<ul> 
-    <li> </li>
-</ul>
-
-
-4. Grab value from input field
-https://www.w3schools.com/tags/ev_onchange.asp
-
-this link will help
-
-https://github.com/CodeYourFuture/js-exercises/blob/master/week-5/InClass/A-dom-manipulation/exercise.js
-
-*/
+function largeFontSize(font){
+    font.style.font-size =  "76px";
+}
+>>>>>>> Stashed changes
