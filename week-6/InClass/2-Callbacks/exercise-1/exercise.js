@@ -10,3 +10,23 @@ Update your code to make the colour change every 5 seconds to something differen
 
 ================
 */
+
+
+setTimeout(function () {
+
+    document.body.style.backgroundColor = "orange";},5000);   
+
+
+
+    setInterval(function(){
+        let main = document.querySelector("#main");
+
+         console.log("main");
+        if(main.style.backgroundColor === "blue"){
+           main.style.backgroundColor = "red";
+        }
+        else{
+            main.style.backgroundColor = "blue";
+        };
+
+    },5000);
