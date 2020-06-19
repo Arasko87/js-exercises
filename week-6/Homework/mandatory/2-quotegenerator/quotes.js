@@ -1,3 +1,29 @@
+
+/*
+window.onload = setup; then function setup(){} setup() if we put the <javaScript > 
+on the button of the body we don't need this code..
+*/
+ 
+  
+
+
+function gitTheQuote(){
+
+let newQuotes = pickFromArray(quotes);
+    hQuote = document.querySelector("#h1Quote");
+    hQuote.innerText= newQuotes.quote;
+
+    hAuthor = document.querySelector("#h4author");
+    hAuthor.innerText= newQuotes.author;
+}
+
+let button = document.querySelector("#button");
+    button.addEventListener("click", gitTheQuote);
+
+    window.onload = gitTheQuote;
+    
+
+
 // DO NOT EDIT BELOW HERE
 
 // A function which will return one item, at
@@ -22,7 +48,7 @@ function pickFromArray(choices) {
 }
 
 // A list of quotes you can use in your app.
-// Feel free to edit them, and to add your own favourites.
+// Feel free to edit them, and to add your own favorites.
 const quotes = [
   {
     quote: "Life isn’t about getting and having, it’s about giving and being.",
