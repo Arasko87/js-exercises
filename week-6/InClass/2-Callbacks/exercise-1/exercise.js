@@ -20,7 +20,6 @@ setTimeout(function () {
 
     setInterval(function(){
         let main = document.querySelector("#main");
-
          console.log("main");
         if(main.style.backgroundColor === "blue"){
            main.style.backgroundColor = "red";
