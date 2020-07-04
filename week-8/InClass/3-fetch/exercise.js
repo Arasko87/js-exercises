@@ -10,6 +10,6 @@
  .then(function(result){
      return result.json();
  })
- .then(function(data){
-     console.log(data[0].name);
+ .then(function(anything){
+     console.log(anything[0].name);
  });
