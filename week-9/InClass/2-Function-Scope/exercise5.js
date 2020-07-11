@@ -19,4 +19,4 @@ function sayGoodbye(name) {
   console.log(goodbye + personName);
 }
 
-sayGoodbye("Gianluca");
+sayGoodbye("Gianluca"); // au revoir Emilia
