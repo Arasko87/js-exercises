@@ -13,6 +13,6 @@ function greetAgain(name) {
 
 let greeting = "Holla!";
 
-console.log(greeting);
-greetOnce("Mimi");
-greetAgain("Awet");
+console.log(greeting); // Holla
+greetOnce("Mimi"); // hi mimi
+greetAgain("Awet"); // shalom Awet
